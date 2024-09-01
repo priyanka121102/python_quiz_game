@@ -68,7 +68,7 @@ def fetch_questions():
     conn = sqlite3.connect('quiz_game.db')
     cursor = conn.cursor()
 
-    cursor.execute('SELECT * FROM questions ORDER BY RANDOM () LIMIT 5')
+    cursor.execute('SELECT * FROM questions LIMIT 10')
     questions = cursor.fetchall()
 
     conn.close()
