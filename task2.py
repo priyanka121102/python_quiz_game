@@ -97,8 +97,8 @@ def play_game():
 
     print(f"\nYour final score is {score*10}/{len(questions*10)}.")
     if score>(len(question)/2):
-        print("you are winner")
+        print("you are win the quiz")
     else:
-        print("you are loser ! please try again")    
+        print("you are lose ! please try again")    
 
 play_game()
